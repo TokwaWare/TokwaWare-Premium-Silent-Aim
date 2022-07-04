@@ -7,7 +7,7 @@ local GuiService = game:GetService("GuiService")
 local RunService = game:GetService("RunService")
 
 -- // Vars
-local Heartbeat = RunService.Heartbeat
+local Heartbeat = RunService.Heartbeat  
 local LocalPlayer = Players.LocalPlayer
 local CurrentCamera = Workspace.CurrentCamera
 local Mouse = LocalPlayer:GetMouse()
@@ -38,18 +38,18 @@ getgenv().Aiming = {
     Enabled = false,
 
     ShowFOV = false,
-    FOV = 20,
-    FOVSides = 300,
-    FOVColour = Color3fromRGB(0, 0, 0),
+    FOV = 119,
+    FOVSides = 100,
+    FOVColour = Color3fromRGB(0,0,0),
 
-    VisibleCheck = true,
+    VisibleCheck = false,
     
     HitChance = 110,
 
     Selected = nil,
     SelectedPart = nil,
 
-    TargetPart = {"Head", "UpperTorso", "LowerTorso", ""HumanoidRootPart", "RightFoot", "LeftFoot"},
+    TargetPart = {"Head", "UppterTorso", "HumanoidRootPart", "LowerTorso", "LeftFoot", "RightFoot"},
 
     Ignored = {
         Teams = {
@@ -60,7 +60,7 @@ getgenv().Aiming = {
         },
         Players = {
             LocalPlayer,
-            3254489874
+            91318356
         }
     }
 }

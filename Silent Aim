@@ -7,7 +7,7 @@ local GuiService = game:GetService("GuiService")
 local RunService = game:GetService("RunService")
 
 -- // Vars
-local Heartbeat = RunService.Heartbeat
+local Heartbeat = RunService.Heartbeat  
 local LocalPlayer = Players.LocalPlayer
 local CurrentCamera = Workspace.CurrentCamera
 local Mouse = LocalPlayer:GetMouse()
@@ -35,16 +35,16 @@ local tableinsert = table.insert
 
 -- // Silent Aim Vars
 getgenv().Aiming = {
-    Enabled = true,
+    Enabled = false,
 
     ShowFOV = false,
-    FOV = 17,
-    FOVSides = 24,
-    FOVColour = Color3fromRGB(0, 0, 0),
+    FOV = 119,
+    FOVSides = 300,
+    FOVColour = Color3fromRGB(0,0,0),
 
-    VisibleCheck = true,
+    VisibleCheck = false,
     
-    HitChance = 100,
+    HitChance = 110,
 
     Selected = nil,
     SelectedPart = nil,
